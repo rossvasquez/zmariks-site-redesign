@@ -5,7 +5,7 @@ import grubhub from '../../static/landingPage/grubhub.png'
 function DeliveryServices() {
 
     return(
-        <div className='w-screen max-w-6xl h-auto mx-auto px-4 mb-8'>
+        <div className='w-screen max-w-7xl h-auto mx-auto px-4 mb-4 sm:mb-8'>
             <a href='https://www.doordash.com/business/z%27mariks-noodle-cafe-153806/' target='_blank' className='flex justify-center items-center rounded-[.25rem] bg-[#FF3008] w-full mx-auto h-32 hover:shadow-xl py-6'>
                 <img src={doordash} className='w-11/12 py-1 scale-100 sm:scale-50' />
             </a>
