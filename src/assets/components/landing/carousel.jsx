@@ -18,6 +18,7 @@ function LandingCarousel() {
                 showIndicators={false}
                 showThumbs={false}
                 showArrows={false}
+                thumbWidth={120}
             >
                 <div className='bg-[#63b0bb] h-[34rem] px-10'>
                     <p className='relative text-6xl md:text-7xl xl:text-8xl w-full mx-auto text-amber-300 textShadow pt-32 sm:pt-32 z-10'>make lunch colorful.</p>
