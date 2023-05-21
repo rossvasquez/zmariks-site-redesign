@@ -85,26 +85,26 @@ function NewOrder() {
 
     const InitialOptions = () =>
         <div className="h-auto lg:h-80 w-full flex flex-col lg:flex-row hover:cursor-pointer">  
-            <div onClick={resLocationTakeout} className="flex justify-center items-center text-3xl w-full h-40 lg:h-auto text-3xl hover:shadow-xl">Takeout</div>
+            <div onClick={resLocationTakeout} className="flex justify-center items-center text-3xl w-full h-40 lg:h-auto text-3xl">Takeout</div>
             <div className="w-[.5rem] h-full bg-amber-200"></div>
-            <div onClick={resLocationDelivery} className="flex justify-center items-center text-3xl w-full h-40 border-t-2 border-amber-200 lg:border-0 lg:h-auto text-3xl hover:shadow-xl">Delivery</div>
+            <div onClick={resLocationDelivery} className="flex justify-center items-center text-3xl w-full h-40 border-t-2 border-amber-200 lg:border-0 lg:h-auto text-3xl">Delivery</div>
             <div className="w-[.5rem] h-full bg-amber-200"></div>
-            <a href='https://catering-order-system-2ae86.web.app/' target='_blank' className="flex justify-center items-center text-3xl w-full h-40 lg:h-auto text-3xl hover:shadow-xl border-t-2 border-amber-200 lg:border-0">Catering</a>
+            <a href='https://catering-order-system-2ae86.web.app/' target='_blank' className="flex justify-center items-center text-3xl w-full h-40 lg:h-auto text-3xl border-t-2 border-amber-200 lg:border-0">Catering</a>
         </div>
     
     const LocationOptions = () =>
         <div className="h-auto lg:h-80 w-full flex flex-col lg:flex-row hover:cursor-pointer">
-            <div onClick={deliveryOrPickupLinkClive} className="flex justify-center items-center h-44 lg:h-auto w-full hover:shadow-xl overflow-hidden relative">
+            <div onClick={deliveryOrPickupLinkClive} className="flex justify-center items-center h-44 lg:h-auto w-full overflow-hidden relative">
                 <p className='relative z-10 text-3xl'>Clive</p>
                 <img src={frontClive} className="absolute object-cover w-full mt-20 lg:mt-16 opacity-10 z-0" />
             </div>
             <div className="lg:w-[.5rem] w-full h-[.1rem] lg:h-full bg-amber-200"></div>
-            <div onClick={deliveryOrPickupLinkIC} className="flex justify-center items-center h-44 lg:h-auto w-full hover:shadow-xl overflow-hidden relative">
+            <div onClick={deliveryOrPickupLinkIC} className="flex justify-center items-center h-44 lg:h-auto w-full overflow-hidden relative">
                 <p className='relative z-10 text-3xl'>Iowa City</p>
                 <img src={frontIC} className="absolute object-cover w-full opacity-10 z-0 scale-125 ml-4 mt-16 lg:mt-0" />
             </div>
             <div className="lg:w-[.5rem] w-full h-[.1rem] lg:h-full bg-amber-200"></div>
-            <div onClick={deliveryOrPickupLinkMC} className="flex justify-center items-center h-44 lg:h-auto w-full hover:shadow-xl overflow-hidden relative">
+            <div onClick={deliveryOrPickupLinkMC} className="flex justify-center items-center h-44 lg:h-auto w-full overflow-hidden relative">
                 <p className='relative z-10 text-3xl'>Mason City</p>
                 <img src={frontMC} className="absolute object-cover w-full opacity-10 z-0 scale-125 lg:mt-2 mt-28" />
             </div>
@@ -112,15 +112,15 @@ function NewOrder() {
     
     const CliveDelivery = () =>
         <div className="flex flex-col md:flex-row w-full h-80 hover:cursor-pointer">
-            <a target='_blank' href="https://www.doordash.com/store/z'mariks-noodle-cafe-clive-290410/" className="w-full h-full flex items-center justify-center md:border-r-2 border-b-2 border-amber-200 hover:shadow-lg"><img className="scale-75 sm:scale-50 md:scale-75" src={doordash} /></a>
-            <a target='_blank' href="https://www.grubhub.com/restaurant/zmariks-noodle-cafe-12655-university-ave-clive/1536147" className="w-full h-full flex items-center justify-center hover:shadow-lg"><img className="scale-50 sm:scale-[40%] md:scale-75" src={grubhub} /></a>
+            <a target='_blank' href="https://www.doordash.com/store/z'mariks-noodle-cafe-clive-290410/" className="w-full h-full flex items-center justify-center md:border-r-2 border-b-2 border-amber-200"><img className="scale-75 sm:scale-50 md:scale-75" src={doordash} /></a>
+            <a target='_blank' href="https://www.grubhub.com/restaurant/zmariks-noodle-cafe-12655-university-ave-clive/1536147" className="w-full h-full flex items-center justify-center"><img className="scale-50 sm:scale-[40%] md:scale-75" src={grubhub} /></a>
         </div>
 
     const ICDelivery = () =>
         <div className="flex flex-col lg:flex-row w-full h-full lg:h-80 hover:cursor-pointer">
-            <a target='_blank' href="https://www.doordash.com/store/z'mariks-noodle-cafe-iowa-city-1528411/" className="w-full h-40 lg:h-full flex items-center justify-center lg:border-r-2 lg:border-b-0 border-b-2 border-amber-200 hover:shadow-lg"><img className="scale-75 sm:scale-50 lg:scale-75" src={doordash} /></a>
-            <a target='_blank' href="https://www.grubhub.com/restaurant/zmariks-noodle-cafe-19-s-dubuque-st-iowa-city/5991704" className="w-full h-40 lg:h-full flex items-center justify-center lg:border-b-0 lg:border-r-2 border-b-2 border-amber-200 hover:shadow-lg"><img className="scale-50 sm:scale-[40%] lg:scale-75" src={grubhub} /></a>
-            <a target='_blank' href="https://www.chomp.delivery/order/restaurant/zmariks-noodle-cafe-menu/100031" className="w-full h-40 lg:h-full flex items-center justify-center hover:shadow-lg"><img className="scale-50 sm:scale-[40%] lg:scale-50" src={chompLogo} /></a>
+            <a target='_blank' href="https://www.doordash.com/store/z'mariks-noodle-cafe-iowa-city-1528411/" className="w-full h-40 lg:h-full flex items-center justify-center lg:border-r-2 lg:border-b-0 border-b-2 border-amber-200"><img className="scale-75 sm:scale-50 lg:scale-75" src={doordash} /></a>
+            <a target='_blank' href="https://www.grubhub.com/restaurant/zmariks-noodle-cafe-19-s-dubuque-st-iowa-city/5991704" className="w-full h-40 lg:h-full flex items-center justify-center lg:border-b-0 lg:border-r-2 border-b-2 border-amber-200"><img className="scale-50 sm:scale-[40%] lg:scale-75" src={grubhub} /></a>
+            <a target='_blank' href="https://www.chomp.delivery/order/restaurant/zmariks-noodle-cafe-menu/100031" className="w-full h-40 lg:h-full flex items-center justify-center"><img className="scale-50 sm:scale-[40%] lg:scale-50" src={chompLogo} /></a>
         </div>
     
     const MCDelivery = () =>
