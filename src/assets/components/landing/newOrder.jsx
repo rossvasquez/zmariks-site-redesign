@@ -132,7 +132,7 @@ function NewOrder() {
     <img src={pasta} className="absolute top-0 h-auto w-full sm:w-auto h-auto sm:h-80 z-0 mr-6 mt-10 sm:-mt-20 scale-[200%] sm:scale-150 opacity-40" />
 
     return (
-        <div className="flex justify-center relative z-10 w-screen h-auto py-8 sm:py-16 overflow-hidden shadow-inner">
+        <div className="flex justify-center relative z-10 w-screen bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-cyan-600 via-cyan-100 to-cyan-600 h-auto py-8 sm:py-16 overflow-hidden shadow-inner">
             {!showOrderOption ? <PastaImage /> : null}
             <div className="relative w-screen max-w-7xl mx-auto z-10">
                 <div className="bg-transparent h-auto mx-4">
