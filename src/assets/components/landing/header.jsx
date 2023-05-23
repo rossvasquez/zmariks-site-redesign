@@ -1,7 +1,28 @@
 import { Link } from "react-router-dom";
 import logoMain from '../../static/landingPage/logoMain.png'
+import { useState } from "react";
 
 function Header() {
+
+    const [showMobileMenu, setMobileMenu] = useState(false);
+
+    const tapMenu = () => {
+      if (showMobileMenu) {
+        setMobileMenu(false);
+      } else {
+        setMobileMenu(true);
+      }
+    }
+
+    const MobileMenu = () => 
+    <div className="absolute flex flex-col top-0 left-0 mt-20 py-4 h-auto w-screen bg-amber-200 z-30">
+    <Link to='/rewards' className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2">Rewards</Link>
+    <Link className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2"></Link>
+    <Link className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2"></Link>
+    <Link className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2"></Link>
+    <Link className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2"></Link>
+    <Link className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2"></Link>
+  </div>
 
     return (
       <>
@@ -22,12 +43,14 @@ function Header() {
         </nav>
         <nav className='flex visible lg:invisible bg-amber-300 fixed top-0 h-20 w-screen shadow-lg overflow-show z-50'>
           <img src={logoMain} className='absolute left-4 sm:left-10 top-0 -mt-3 sm:-mt-4 h-32 sm:h-40'></img>
-          <button className='absolute border-[.3rem] rounded-md border-transparent hover:border-amber-200 sm:right-6 right-3 h-16 hover:bg-amber-200 w-16 mt-2'>
+          <button onClick={tapMenu} className='absolute border-[.3rem] rounded-md border-transparent hover:border-amber-200 sm:right-6 right-3 h-16 hover:bg-amber-200 w-16 mt-2'>
             <div className='h-[.45rem] rounded-md left-0.5 w-11/12 bg-black absolute top-1'></div>
             <div className='h-[.45rem] rounded-md ml-0.5 w-11/12 bg-black'></div>
             <div className='h-[.45rem] rounded-md left-0.5 w-11/12 bg-black absolute bottom-1'></div>
           </button>
         </nav>
+        {showMobileMenu ? <MobileMenu /> : null}
+        
       </>
     )
   }
