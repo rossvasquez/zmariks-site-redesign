@@ -5,6 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      lobster: ["Lobster", "cursive"],
+      slab: ["Roboto Slab", "serif"],
+    },
     extend: {},
   },
   plugins: [],

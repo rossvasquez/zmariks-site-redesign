@@ -71,7 +71,7 @@ function NewOrder() {
     }
 
     const OrderNow = () =>
-        <div onClick={openOrderOptions} className="flex justify-center text-5xl hover:shadow-xl items-center w-full max-w-lg mx-auto bg-amber-300 shadow-lg hover:cursor-pointer rounded-md h-40">Order Now</div>
+        <div onClick={openOrderOptions} className="flex justify-center text-5xl xs:text-6xl md:text-7xl hover:shadow-xl items-center w-full max-w-3xl mx-auto bg-amber-300 shadow-lg text-slate-50 textShadow3 hover:cursor-pointer rounded-lg h-40 font-slab uppercase font-semibold">Order</div>
 
     const OrderOptions = () => 
         <div className="flex flex-col w-full h-auto rounded-lg bg-amber-300 hover:cursor-pointer">
@@ -129,11 +129,12 @@ function NewOrder() {
         </div>
 
     const PastaImage = () =>
-    <img src={pasta} className="absolute top-0 h-auto w-full sm:w-auto h-auto sm:h-80 z-0 mr-6 mt-10 sm:-mt-20 scale-[200%] sm:scale-150 opacity-40" />
+    <img src={pasta} className="absolute top-0 h-auto w-full sm:w-auto h-auto sm:h-80 z-0 mr-6 mt-10 sm:-mt-10 scale-[250%] opacity-80" />
 
     return (
-        <div className="flex justify-center relative z-10 w-screen bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-cyan-600 via-cyan-100 to-cyan-600 h-auto py-8 sm:py-16 overflow-hidden shadow-inner">
-            {!showOrderOption ? <PastaImage /> : null}
+        <div className="flex justify-center relative z-10 w-screen bg-[#63b0bb] h-auto py-8 sm:py-16 overflow-hidden shadow-inner">
+            {/* {!showOrderOption ? <PastaImage /> : null} */}
+            <PastaImage />
             <div className="relative w-screen max-w-7xl mx-auto z-10">
                 <div className="bg-transparent h-auto mx-4">
                     {!showOrderOption ? <OrderNow /> : null}
