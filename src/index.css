@@ -9,7 +9,7 @@ html {
 }
 
 .textShadow {
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+  text-shadow: 2px 2px 0px black;
 }
 
 .textShadow1 {
@@ -20,11 +20,26 @@ html {
   text-shadow: 2px 2px 0px black;
 }
 
+.textShadow6 {
+  text-shadow: 2px 2px 0px #fcd34d;
+}
+
+.textShadow7 {
+  text-shadow: 1.5px 1.5px 0px #fcd34d;
+}
+
 .textShadow2 {
   text-shadow: 1px 1px 0px black;
 }
 
 .textShadow4 {
-  text-shadow: 3px 3px 0px black;
+  text-shadow: 1.5px 1.5px 0px black;
 }
 
+.textShadow5 {
+  text-shadow: 1.5px 1.5px 0px black;
+}
+
+.noResize {
+  resize: none;
+}

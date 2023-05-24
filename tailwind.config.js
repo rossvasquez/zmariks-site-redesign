@@ -8,6 +8,7 @@ export default {
     fontFamily: {
       lobster: ["Lobster", "cursive"],
       slab: ["Roboto Slab", "serif"],
+      staat: ["Staatliches", "cursive"],
     },
     extend: {},
   },

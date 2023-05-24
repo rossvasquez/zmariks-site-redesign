@@ -6,6 +6,7 @@ import doordash from '../../static/landingPage/doordash.png'
 import grubhub from '../../static/landingPage/grubhub.png'
 import chompLogo from '../../static/landingPage/chompLogo.png'
 import pasta from '../../static/landingPage/pasta.png'
+import orderNoodles from '../../static/orderNoodles.png'
 
 function NewOrder() {
 
@@ -71,7 +72,7 @@ function NewOrder() {
     }
 
     const OrderNow = () =>
-        <div onClick={openOrderOptions} className="flex justify-center text-5xl xs:text-6xl md:text-7xl hover:shadow-xl items-center w-full max-w-3xl mx-auto bg-amber-300 shadow-lg text-slate-50 textShadow3 hover:cursor-pointer rounded-lg h-40 font-slab uppercase font-semibold">Order</div>
+        <div onClick={openOrderOptions} className="flex justify-center text-7xl md:text-8xl hover:shadow-lg items-center w-full max-w-2xl mx-auto bg-amber-300 shadow-md text-slate-50 textShadow4 hover:cursor-pointer rounded-lg h-40 font-staat uppercase">Order</div>
 
     const OrderOptions = () => 
         <div className="flex flex-col w-full h-auto rounded-lg bg-amber-300 hover:cursor-pointer">
@@ -129,12 +130,14 @@ function NewOrder() {
         </div>
 
     const PastaImage = () =>
-    <img src={pasta} className="absolute top-0 h-auto w-full sm:w-auto h-auto sm:h-80 z-0 mr-6 mt-10 sm:-mt-10 scale-[250%] opacity-80" />
+    <>
+    <img src={orderNoodles} className="invisible sm:visible absolute top-20 -mt-1 right-4 w-auto z-0 scale-[200%] opacity-80" />
+    <div className='hidden'>Image Courtesy Vecteezy https://www.vecteezy.com/vector-art/15846132-instant-noodle-pattern-wallpaper-instant-noodle-symbol</div>
+    </>
 
     return (
-        <div className="flex justify-center relative z-10 w-screen bg-[#63b0bb] h-auto py-8 sm:py-16 overflow-hidden shadow-inner">
-            {/* {!showOrderOption ? <PastaImage /> : null} */}
-            <PastaImage />
+        <div className="flex justify-center relative z-10 w-screen bg-[#63b0bb] h-auto py-8 overflow-hidden shadow-inner">
+            {!showOrderOption ? <PastaImage /> : null}
             <div className="relative w-screen max-w-7xl mx-auto z-10">
                 <div className="bg-transparent h-auto mx-4">
                     {!showOrderOption ? <OrderNow /> : null}
