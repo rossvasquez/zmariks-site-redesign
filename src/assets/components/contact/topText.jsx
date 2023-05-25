@@ -15,7 +15,7 @@ function TopText() {
             textShadow7 leading-tight md:leading-tight uppercase'>
                 What's On Your Mind?
             </p>
-            <p className='mt-6 text-center uppercase text-3xl md:text-4xl text-gray-800 max-w-6xl mx-auto 
+            <p className='mt-6 uppercase text-3xl md:text-4xl text-slate-800 max-w-6xl mx-auto 
             font-staat leading-snug md:leading-snug tracking-wide md:tracking-wide'>
                 Questions, Comments, or Concerns - we'd love to hear from you!
             </p>
