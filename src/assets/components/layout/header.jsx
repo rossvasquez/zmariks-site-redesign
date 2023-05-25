@@ -22,12 +22,12 @@ function Header() {
       <> 
         <div className="fixed shadow-xl flex flex-col top-0 left-0 mt-20 h-screen w-screen z-30">
           <div className="relative flex flex-col rounded-xl bg-amber-200 h-auto py-4 z-30 -mt-10 pt-12">
-            <Link onClick={tapMenu} className="flex justify-center items-center text-2xl bg-amber-300 h-16 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Menu</Link>
-            <Link onClick={tapMenu} className="flex justify-center items-center text-2xl bg-amber-300 h-16 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Locations</Link>
-            <Link onClick={tapMenu} to='/rewards' className="flex justify-center items-center text-2xl bg-amber-300 h-16 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Rewards</Link>
-            <Link onClick={tapMenu} className="flex justify-center items-center text-2xl bg-amber-300 h-16 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Gift Cards</Link>
-            <Link onClick={tapMenu} className="flex justify-center items-center text-2xl bg-amber-300 h-16 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Franchise</Link>
-            <Link onClick={tapMenu} to='/contact' className="flex justify-center items-center text-2xl bg-amber-300 h-16 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Contact</Link>
+            <Link onClick={tapMenu} className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Menu</Link>
+            <Link onClick={tapMenu} className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Locations</Link>
+            <Link onClick={tapMenu} to='/rewards' className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Rewards</Link>
+            <Link onClick={tapMenu} className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Gift Cards</Link>
+            <Link onClick={tapMenu} className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Franchise</Link>
+            <Link onClick={tapMenu} to='/contact' className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Contact</Link>
           </div>
           <div className="relative h-full -mt-10 bg-slate-900 opacity-80 w-screen z-20"></div>
         </div>
