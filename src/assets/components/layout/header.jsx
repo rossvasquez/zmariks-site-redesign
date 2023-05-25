@@ -20,7 +20,7 @@ function Header() {
 
     const MobileMenu = () => 
       <> 
-        <div className="fixed shadow-xl flex flex-col top-0 left-0 mt-20 h-screen w-screen z-30 overflow-y-auto">
+        <div className="fixed shadow-xl flex flex-col top-0 left-0 mt-20 h-screen w-screen z-30">
           <div className="relative flex flex-col rounded-xl bg-amber-200 h-[80rem] py-4 z-30 -mt-10 pt-12">
             <Link onClick={tapMenu} className="flex justify-center items-center text-2xl bg-amber-300 h-full rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Menu</Link>
             <Link onClick={tapMenu} className="flex justify-center items-center text-2xl bg-amber-300 h-full rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Locations</Link>

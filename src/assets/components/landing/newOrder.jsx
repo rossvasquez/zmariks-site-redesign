@@ -131,7 +131,7 @@ function NewOrder() {
 
     const PastaImage = () =>
     <>
-    <img src={orderNoodles} className="invisible sm:visible absolute top-20 -mt-1 right-4 w-auto z-0 scale-[200%] opacity-80" />
+    <img src={orderNoodles} className="invisible sm:visible absolute top-20 -mt-2 h-20 z-0 scale-[200%] opacity-80" />
     <div className='hidden'>Image Courtesy Vecteezy https://www.vecteezy.com/vector-art/15846132-instant-noodle-pattern-wallpaper-instant-noodle-symbol</div>
     </>
 
