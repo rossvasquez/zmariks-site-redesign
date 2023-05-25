@@ -4,10 +4,10 @@ import ContactForm from "../assets/components/contact/contactForm"
 function Contact() {
     
     return (
-        <>
-        <TopText />
-        <ContactForm />
-        </>
+        <div className="relative h-auto w-screen overflow-hidden">
+            <TopText />
+            <ContactForm />
+        </div>
     )
 }
 
