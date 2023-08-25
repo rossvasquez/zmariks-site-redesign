@@ -22,11 +22,9 @@ function Header() {
       <> 
         <div className="fixed shadow-xl flex flex-col top-0 left-0 mt-20 h-screen w-screen z-30">
           <div className="relative flex flex-col rounded-xl bg-amber-200 h-auto py-4 z-30 -mt-10 pt-12">
-            <Link onClick={tapMenu} className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Menu</Link>
             <Link onClick={tapMenu} to='/locations' className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Locations</Link>
             <Link onClick={tapMenu} to='/rewards' className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Rewards</Link>
             <Link onClick={tapMenu} className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Gift Cards</Link>
-            <Link onClick={tapMenu} to='/franchise' className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Franchise</Link>
             <Link onClick={tapMenu} to='/contact' className="flex justify-center items-center text-2xl bg-amber-300 h-20 rounded-md w-11/12 mx-auto my-2 hover:cursor-pointer">Contact</Link>
           </div>
           <div className="relative h-full -mt-10 bg-slate-900 opacity-80 w-screen z-20"></div>
@@ -37,15 +35,11 @@ function Header() {
       <>
         <nav className='flex justify-center items-center invisible lg:visible bg-amber-300 fixed top-0 h-28 w-screen shadow-lg overflow-show z-50'>
             <div className='absolute top-0 flex flex-row justify-center items-center w-screen h-28 pb-2'>
-              <Link className='w-40 text-lg text-center hover:shadow-xl bg-transparent border-amber-200 hover:bg-[#63b0bb] hover:rounded-sm hover:border-0 h-14 pt-3 hover:cursor-pointer hover:text-slate-50 hover:pt-3.5'>Menu</Link>
-              <div className='h-14 w-[.1rem] bg-amber-200'></div>
               <Link to='/locations' className='w-40 text-lg text-center hover:shadow-xl bg-transparent border-amber-200 hover:bg-[#63b0bb] hover:rounded-sm hover:border-0 h-14 pt-3 hover:cursor-pointer hover:text-slate-50 hover:pt-3.5'>Locations</Link>
               <div className='h-14 w-[.1rem] bg-amber-200'></div>
               <Link to='/rewards' className='w-40 text-lg text-center hover:shadow-xl bg-transparent hover:pl-0 pl-4 border-amber-200 hover:bg-[#63b0bb] hover:rounded-sm hover:border-0 h-14 pt-3 hover:cursor-pointer hover:text-slate-50 hover:pt-3.5'>Rewards</Link>
               <Link to='/'><img src={logoMain} className='h-40 mx-4 mt-8 z-20'></img></Link>
-              <Link className='w-40 text-lg text-center hover:shadow-xl bg-transparent hover:pr-0 pr-4 border-amber-200 hover:bg-[#63b0bb] hover:rounded-sm hover:border-0 h-14 pt-3 hover:cursor-pointer hover:text-slate-50 hover:pt-3.5'>Gift Cards</Link>
-              <div className='h-14 w-[.1rem] bg-amber-200'></div>
-              <Link to='/franchise' className='w-40 text-lg text-center hover:shadow-xl bg-transparent border-amber-200 hover:bg-[#63b0bb] hover:rounded-sm hover:border-0 h-14 pt-3 hover:cursor-pointer hover:text-slate-50 hover:pt-3.5'>Franchise</Link>
+              <Link to='/giftcards' className='w-40 text-lg text-center hover:shadow-xl bg-transparent hover:pr-0 pr-4 border-amber-200 hover:bg-[#63b0bb] hover:rounded-sm hover:border-0 h-14 pt-3 hover:cursor-pointer hover:text-slate-50 hover:pt-3.5'>Gift Cards</Link>
               <div className='h-14 w-[.1rem] bg-amber-200'></div>
               <Link to='/contact' className='w-40 text-lg text-center hover:shadow-xl bg-transparent border-amber-200 hover:bg-[#63b0bb] hover:rounded-sm hover:border-0 h-14 pt-3 hover:cursor-pointer hover:text-slate-50 hover:pt-3.5'>Contact</Link>
             </div>

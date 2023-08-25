@@ -4,7 +4,7 @@ function Rewards() {
     
     return (
         <>
-        <Blurb />
+            <Blurb />
         </>
     )
 }
